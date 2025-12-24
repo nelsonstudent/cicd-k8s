@@ -1,2 +1,0 @@
-NAME                        READY   STATUS    RESTARTS   AGE
-java-app-6fc66f54c7-zqmkt   1/1     Running   0          31s
