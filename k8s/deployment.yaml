@@ -16,12 +16,13 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: IMAGE_PLACEHOLDER
+          image: java-app:local
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           readinessProbe:
             httpGet:
-              path: /actuator/health
+              path: /
               port: 8080
             initialDelaySeconds: 10
             periodSeconds: 5
